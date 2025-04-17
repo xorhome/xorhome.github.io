@@ -1,0 +1,1 @@
+function i(i){if(!i)return"";if(~i.indexOf("http"))return i;const[n]=i.split(/\|\|?/);return n&&~n.indexOf("icon-")?n.replace("icon-",""):n&&~n.indexOf("res-")?`/static/icons/${n.replace("res-","")}.png`:n&&~n.indexOf(".")?`/static/icons/${n}`:`/static/icons/${n}.png`}export{i};
